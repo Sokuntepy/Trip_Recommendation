@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-style {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5cm; /* Increased font size */
+    font-weight: bold;
+    color: white;
+}
+
+.half-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 40%;
+    height: 25%; /* Auto height for content-based sizing */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    border-radius: 15px;
+    opacity: 0.9;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    font-size: 0.5cm;
+}
+
+.action-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+input, select {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    position: absolute;
+    top: 70%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.dropdown-container input,
+.dropdown-container select {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-container select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 20px);
+    z-index: 10;
+}
+
+.dropdown-label {
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Additional styles for inline layout */
+.inline-container {
+    position: flex;
+    top: 12cm;
+    left: 10cm;
+}
+
+.inline-label {
+    margin-right: 10px; /* Space between label and input/select */
+}
+
+.park-image {
+    width: 200px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+  }
+  
+  .park-details {
+    margin-top: 10px;
+  }
+
+  
